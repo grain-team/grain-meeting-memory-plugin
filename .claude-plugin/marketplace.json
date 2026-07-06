@@ -1,0 +1,14 @@
+{
+  "name": "grain",
+  "description": "Plugins by Grain — turn meeting recordings into trusted, evidence-backed work product.",
+  "owner": {
+    "name": "Grain"
+  },
+  "plugins": [
+    {
+      "name": "meeting-memory-by-grain",
+      "source": "./",
+      "description": "Turn Grain meeting recordings into answers, follow-ups, prep, patterns, and shareable work product."
+    }
+  ]
+}

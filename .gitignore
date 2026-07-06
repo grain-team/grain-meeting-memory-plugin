@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Eval run artifacts
+evals/results/
+
+# Internal working docs — never commit; this repo becomes public at submission
+internal/

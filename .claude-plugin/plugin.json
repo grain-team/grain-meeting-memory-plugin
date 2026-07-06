@@ -1,0 +1,18 @@
+{
+  "name": "meeting-memory-by-grain",
+  "version": "0.1.0",
+  "description": "Turn Grain meeting recordings into answers, follow-ups, prep, patterns, and shareable work product. Catch up on what changed, find the source behind a claim or decision, recover commitments, prepare for meetings, spot patterns across conversations, and draft evidence-backed briefs, updates, and emails.",
+  "author": {
+    "name": "Grain"
+  },
+  "homepage": "https://grain.com",
+  "keywords": [
+    "meetings",
+    "meeting-memory",
+    "transcripts",
+    "follow-ups",
+    "meeting-prep",
+    "customer-conversations",
+    "grain"
+  ]
+}
