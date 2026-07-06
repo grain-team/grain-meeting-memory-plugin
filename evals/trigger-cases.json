@@ -4,72 +4,107 @@
     {
       "name": "follow-up-email",
       "prompt": "Write the follow-up email for my Acme call this morning.",
-      "expect": ["follow-up"]
+      "expect": [
+        "follow-up"
+      ]
     },
     {
       "name": "action-items",
       "prompt": "What are my open action items from this week?",
-      "expect": ["what-do-i-owe"]
+      "expect": [
+        "what-do-i-owe"
+      ]
     },
     {
       "name": "account-status",
       "prompt": "Where are we with the Meridian renewal?",
-      "expect": ["where-things-stand"]
+      "expect": [
+        "where-things-stand"
+      ]
+    },
+    {
+      "name": "meeting-lookup",
+      "prompt": "What was my last meeting?",
+      "expect": [
+        "where-things-stand"
+      ],
+      "note": "Plain meeting lookup \u2014 found as a gap July 6 when a session reached for the Mac calendar instead."
     },
     {
       "name": "claim-verification",
       "prompt": "Did Sarah actually agree to the September deadline?",
-      "expect": ["what-did-we-say"]
+      "expect": [
+        "what-did-we-say"
+      ]
     },
     {
       "name": "meeting-prep",
       "prompt": "Prep me for my call with Jordan tomorrow.",
-      "expect": ["prep-me"]
+      "expect": [
+        "prep-me"
+      ]
     },
     {
       "name": "pattern-question",
       "prompt": "What keeps coming up as a blocker in our sales calls?",
-      "expect": ["what-did-we-say"]
+      "expect": [
+        "what-did-we-say"
+      ]
     },
     {
       "name": "headsup-decision",
       "prompt": "Should we offer Acme a discount on the renewal? Help me think it through.",
-      "expect": ["heads-up"]
+      "expect": [
+        "heads-up"
+      ]
     },
     {
       "name": "headsup-proofread",
       "prompt": "Proofread this paragraph from my blog post draft about our partnership with Acme: 'Together we will accelerate onboarding for enterprise teams.'",
-      "expect": ["heads-up"]
+      "expect": [
+        "heads-up"
+      ]
     },
     {
       "name": "headsup-pasted-content",
       "prompt": "Here's my draft for the customer newsletter, can you tighten it up? 'This quarter we expanded our work with Meridian Health and launched two new onboarding programs for enterprise teams.'",
-      "expect": ["heads-up"],
+      "expect": [
+        "heads-up"
+      ],
       "note": "Entity named inside pasted content, not the user's own request."
     },
     {
       "name": "headsup-cited-person",
       "prompt": "Jordan said she wants the rollout done in phases, so help me plan the milestones around that.",
-      "expect": ["heads-up"],
-      "note": "User cites what a specific person said — the claim deserves a quiet check."
+      "expect": [
+        "heads-up"
+      ],
+      "note": "User cites what a specific person said \u2014 the claim deserves a quiet check."
     },
     {
       "name": "headsup-or-followup-qbr",
-      "prompt": "I'm putting together the QBR deck for Acme next week — what sections should I include?",
-      "expect": ["heads-up", "follow-up", "prep-me"],
+      "prompt": "I'm putting together the QBR deck for Acme next week \u2014 what sections should I include?",
+      "expect": [
+        "heads-up",
+        "follow-up",
+        "prep-me"
+      ],
       "note": "Account-touching work; any Grain-consulting route serves the user."
     },
     {
       "name": "customer-email-ambiguous",
       "prompt": "Draft a short email to the Acme team letting them know the onboarding timeline.",
-      "expect": ["follow-up", "heads-up"],
+      "expect": [
+        "follow-up",
+        "heads-up"
+      ],
       "note": "Genuinely ambiguous: meeting-sourced drafting (follow-up) or entity side-check (heads-up) both serve the user."
     },
     {
       "name": "negative-personal-mention",
       "prompt": "Can you help me write a short birthday message for my coworker Sam?",
       "expect": [],
-      "note": "Names a person, but personal, not org-memory territory — over-trigger guard."
+      "note": "Names a person, but personal, not org-memory territory \u2014 over-trigger guard."
     },
     {
       "name": "negative-generic-editing",

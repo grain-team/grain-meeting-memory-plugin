@@ -1,6 +1,6 @@
 ---
 name: where-things-stand
-description: Reconstruct current state from Grain meetings over time. Use when the user asks where things stand or what the latest is on an account, project, topic, or person, or wants to catch up after time away.
+description: Reconstruct current state from Grain meetings over time. Use when the user asks where things stand or what the latest is on an account, project, topic, or person, wants to catch up after time away, or asks about their recent recorded meetings ("what was my last meeting?", "who did I meet with this week?").
 argument-hint: "<account, project, topic, or time window>"
 ---
 

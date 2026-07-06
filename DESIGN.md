@@ -97,10 +97,11 @@ So we don't re-litigate:
 ## Dogfood protocol
 
 1. Install: `/plugin marketplace add grain-team/<repo>` then `/plugin install meeting-memory-by-grain@grain` (Claude Code), or org settings → Plugins → sync from GitHub / zip upload (claude.ai). On claude.ai, enable the Grain connector if the bundled MCP config isn't honored.
-2. Use it on real work, not demos — prompts to start from: `docs/test-prompts.md`.
-3. Capture per use: the prompt · right skill fired? · right meetings found? · trusted without re-checking? · artifact sendable as-is?
-4. Feedback as PRs where possible; repeated failures matter more than one-offs. Any description edit must pass `python3 evals/run-triggers.py` (15 cases, ~2 min).
-5. The week must answer two things: **which tiers matched real usage**, and **does `heads-up` earn its place**.
+2. Add the permission rules from the README's "Reduce permission prompts" section — otherwise every Grain read prompts, which will poison the week's UX feedback.
+3. Use it on real work, not demos — prompts to start from: `docs/test-prompts.md`.
+4. Capture per use: the prompt · right skill fired? · right meetings found? · trusted without re-checking? · artifact sendable as-is?
+5. Feedback as PRs where possible; repeated failures matter more than one-offs. Any description edit must pass `python3 evals/run-triggers.py` (15 cases, ~2 min).
+6. The week must answer two things: **which tiers matched real usage**, and **does `heads-up` earn its place**.
 
 ## Publication rules of the road
 
