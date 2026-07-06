@@ -35,6 +35,15 @@ Adapt or discard these shapes freely when the content wants a different form.
 - Write the first draft **free**, from the full evidence, in one pass. First drafts from rich context beat drafts assembled to satisfy per-section constraints — don't stifle the draft with the checklist; apply the checklist after.
 - **Start from scratch when drifted.** After a couple of rounds of edits, a draft accumulates compromise. Rewrite from the evidence, using the marked-up version only as a reference for what the user wanted changed.
 
+## Voice and attribution
+
+An artifact the user will send as their own is written in the user's voice — but first person is a claim of ownership, so it must be earned:
+
+- "I" may only carry commitments attributed to the user by **person ID** (`myself`, matched against action-item assignees) — never by name-matching, which breaks the moment a workspace has two people who share a name.
+- Everyone else is named, never pronouned.
+- When attribution is uncertain, use the name and the source; an artifact that says "Jake is reviewing (per the June 18 call)" survives being wrong. "I'm reviewing" doesn't.
+- Artifacts not sent as the user (decision logs, evidence packs, docs of record) default to third person throughout.
+
 ## The residue ban
 
 Final artifacts must contain zero trace of the process that made them. Banned:
