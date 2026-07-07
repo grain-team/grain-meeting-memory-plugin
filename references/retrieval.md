@@ -2,6 +2,13 @@
 
 The difference between a naive answer and a trusted one is usually retrieval, not reasoning. Follow this sequence.
 
+## 0. If Grain isn't connected
+
+An unauthenticated connector is not a dead end — never answer with "authorize it in settings, then ask me again."
+
+- **Attempt one cheap call anyway** (`myself`). claude.ai and Claude Code intercept the unauthenticated call and surface the connect/authorize prompt inline — attempting the call is what triggers the auth flow. Do not assume the session can't run it.
+- If no Grain tools exist in the session at all, the connector isn't enabled: give the exact path (claude.ai: Settings → Connectors → Grain → Connect; Claude Code: `/mcp`), then hold the user's question and run it in this same conversation the moment they say they're connected.
+
 ## 1. Resolve entities before searching
 
 Names in the user's request are ambiguous until resolved:

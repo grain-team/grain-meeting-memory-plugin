@@ -42,6 +42,11 @@ Real-work prompts per skill. Use your own accounts/names. For each run, note: di
 - Work on something involving an account Grain doesn't know — does it stay appropriately silent?
 - Note: asking to *draft* something customer-facing may route to `follow-up` instead — that's correct; follow-up does full retrieval plus artifact craft.
 
+## First-run / disconnected (run once per surface)
+
+- With the Grain connector disconnected (or before first auth), ask any skill prompt above — does the connect/authorize prompt appear inline, or at minimum an exact click-path (claude.ai: Settings → Connectors → Grain; Claude Code: `/mcp`)? "Authorize it and ask me again" is a fail.
+- After connecting, does it pick the original question back up in the same conversation without you re-asking?
+
 ## Cross-cutting checks
 
 - Are Grain links present and correct? Click two per session.

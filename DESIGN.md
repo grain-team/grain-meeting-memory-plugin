@@ -86,6 +86,7 @@ So we don't re-litigate:
 - **July 2 — skill-authoring pass** (Matt Pocock's writing-great-skills framework): one trigger per branch, single source of truth between skills and playbooks, checkable completion criteria, leading words (*sendable*, *the record*, *ledger*, *fold*, *materiality bar*). Cut always-on cost 729 → ~535 tokens with zero routing regressions.
 - **July 6 — `ambient-recall` renamed `heads-up`.** Trigger rewritten to be evaluable from the message alone (the old "known person" wording required information the model can't have pre-check). Personal/social exclusion added after the eval suite caught an over-trigger on "birthday message for my coworker."
 - **July 6 — kept 6 skills.** Considered merging `prep-me` into `where-things-stand` for a tighter story; Jake called keep.
+- **July 7 — connector preflight added to retrieval playbook (step 0).** Cowork dogfood showed Claude declining to run the OAuth flow and telling the user to fix connector settings themselves. Clients trigger auth inline on an unauthenticated tool call, so the playbook now instructs: attempt one cheap call (`myself`) instead of assuming auth can't run; if no Grain tools exist at all, give the exact connect path and retry in-session. `heads-up` deliberately excluded — ambient checks fail silently, never pop auth prompts.
 
 ## Validation so far (July 6, live against production)
 
