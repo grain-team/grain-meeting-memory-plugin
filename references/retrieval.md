@@ -4,10 +4,14 @@ The difference between a naive answer and a trusted one is usually retrieval, no
 
 ## 0. If Grain isn't connected
 
-An unauthenticated connector is not a dead end — never answer with "authorize it in settings, then ask me again."
+An unauthenticated connector is not a dead end — never answer with "authorize it in settings, then ask me again." Connecting is a one-time, one-click act: grants are account-level, so connecting on any surface (claude.ai, desktop, mobile, Claude Code) connects them all. Walk the user through it in this order:
 
-- **Attempt one cheap call anyway** (`myself`). claude.ai and Claude Code intercept the unauthenticated call and surface the connect/authorize prompt inline — attempting the call is what triggers the auth flow. Do not assume the session can't run it.
-- If no Grain tools exist in the session at all, the connector isn't enabled: give the exact path (claude.ai: Settings → Connectors → Grain → Connect; Claude Code: `/mcp`), then hold the user's question and run it in this same conversation the moment they say they're connected.
+1. **Attempt one cheap call anyway** (`myself`). Claude's clients intercept the unauthenticated call and surface the connect/authorize prompt inline — attempting the call is what triggers the auth flow. Do not assume the session can't run it.
+2. **If the call fails unauthorized and no connect prompt appeared**, give the user the direct route: claude.ai and desktop app — https://claude.ai/settings/connectors → Grain → **Connect**; Claude Code — `/mcp`, then authenticate grain. Then hold their question and run it in this same conversation the moment they say they're connected.
+3. **If Grain shows as connected but calls still fail unauthorized**, the stored token is stale. Same page (https://claude.ai/settings/connectors): open Grain's entry, **Disconnect**, then **Connect** again, then retry the held question.
+4. **If no Grain tools exist in the session at all**, the connector isn't enabled for this account or workspace: point at https://claude.ai/settings/connectors (Grain may need to be added via "Browse connectors" or by a workspace admin first), then hold the question and run it once they're connected.
+
+Never end a turn on "connect first" without also stating what you'll do the moment they are connected.
 
 ## 1. Resolve entities before searching
 

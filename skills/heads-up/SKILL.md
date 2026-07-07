@@ -14,7 +14,7 @@ Read if surfacing anything: `${CLAUDE_PLUGIN_ROOT}/references/evidence.md`.
 
 ## Rules
 
-1. **Check cheaply and silently.** Whether Grain knows the entity is discovered here, not assumed: `search_companies` / `search_persons` first — unknown entity means you're done, silently. Known entity: recent notes or one targeted `search_in_transcripts` on the specific matter. No deep sweeps — this is a side-check, never the main task, and gets abandoned if slow.
+1. **Check cheaply and silently.** Whether Grain knows the entity is discovered here, not assumed: `search_companies` / `search_persons` first — unknown entity means you're done, silently. Known entity: recent notes or one targeted `search_in_transcripts` on the specific matter. No deep sweeps — this is a side-check, never the main task, and gets abandoned if slow. If Grain tools are missing or the connector is unauthorized, stand down silently — never interrupt unrelated work with a connect prompt (that's the retrieval playbook's job, for skills the user invoked on purpose).
 2. **The materiality bar.** A heads-up is warranted only for what would change the user's action:
    - They're about to contradict or forget a commitment
    - The counterpart already stated a position on exactly this

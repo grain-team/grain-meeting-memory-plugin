@@ -44,8 +44,10 @@ Real-work prompts per skill. Use your own accounts/names. For each run, note: di
 
 ## First-run / disconnected (run once per surface)
 
-- With the Grain connector disconnected (or before first auth), ask any skill prompt above — does the connect/authorize prompt appear inline, or at minimum an exact click-path (claude.ai: Settings → Connectors → Grain; Claude Code: `/mcp`)? "Authorize it and ask me again" is a fail.
+- With the Grain connector disconnected (or before first auth), ask any skill prompt above — does the connect/authorize prompt appear inline? If it doesn't, does the answer give the direct link (https://claude.ai/settings/connectors, or `/mcp` in Claude Code) rather than a vague "check your settings"? "Authorize it and ask me again" is a fail.
 - After connecting, does it pick the original question back up in the same conversation without you re-asking?
+- Stuck-token state (connector shows connected but calls fail unauthorized — reproducible after a token expires): does it tell you to disconnect and reconnect Grain at https://claude.ai/settings/connectors, then retry the held question?
+- With Grain disconnected, run a `heads-up` scenario (edit a doc naming a known account) — it must stay completely silent, not push a connect prompt into unrelated work.
 
 ## Cross-cutting checks
 
