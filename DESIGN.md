@@ -98,7 +98,7 @@ So we don't re-litigate:
 ## Dogfood protocol
 
 1. Install: `/plugin marketplace add grain-team/<repo>` then `/plugin install meeting-memory-by-grain@grain` (Claude Code), or org settings → Plugins → sync from GitHub / zip upload (claude.ai). On claude.ai, enable the Grain connector if the bundled MCP config isn't honored.
-2. Add the permission rules from the README's "Reduce permission prompts" section — otherwise every Grain read prompts, which will poison the week's UX feedback.
+2. Expect per-tool permission prompts on first use of each Grain tool; "don't ask again" / "Always allow" accumulates as you go. (Team-internal option for your own machine: `"allow": ["mcp__grain"]` in `~/.claude/settings.json` with `ask` globs on the write tools. We deliberately don't recommend this publicly — a plugin telling users to auto-approve its own tools is a review red flag. The real fix is server-side tool consolidation; proposal is with Ryan.)
 3. Use it on real work, not demos — prompts to start from: `docs/test-prompts.md`.
 4. Capture per use: the prompt · right skill fired? · right meetings found? · trusted without re-checking? · artifact sendable as-is?
 5. Feedback as PRs where possible; repeated failures matter more than one-offs. Any description edit must pass `python3 evals/run-triggers.py` (15 cases, ~2 min).

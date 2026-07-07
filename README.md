@@ -46,27 +46,6 @@ A [Grain](https://grain.com) account. Nothing else — the Grain MCP connector i
 claude --plugin-dir /path/to/grain-meeting-memory-plugin
 ```
 
-## Reduce permission prompts (recommended)
-
-By default, Claude Code asks before every Grain tool call — that's a lot of prompts for read-only lookups. Add this to your `~/.claude/settings.json` (or use `/permissions`) to make reads silent while keeping a confirmation on anything that writes to your workspace:
-
-```json
-{
-  "permissions": {
-    "allow": ["mcp__grain"],
-    "ask": [
-      "mcp__grain__create_*",
-      "mcp__grain__update_*",
-      "mcp__grain__add_*",
-      "mcp__grain__tag_meetings",
-      "mcp__grain__invite_to_workspace"
-    ]
-  }
-}
-```
-
-Ask rules take precedence over allow rules, so searching, reading notes, and fetching transcripts run without prompts, while creating clips/stories/collections, tagging, invites, and settings changes still ask first. Org admins can deploy the same rules organization-wide via managed settings.
-
 ## Dogfooding
 
 Use it on real work, not demos. When something is great or wrong, capture: your prompt, whether the right skill fired, whether it found the right meetings, whether you trusted the output without re-checking, and whether an artifact was sendable as-is. Then open a PR or an issue. Repeated failures matter more than one-offs.
