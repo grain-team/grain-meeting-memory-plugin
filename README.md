@@ -2,8 +2,6 @@
 
 Claude that remembers your meetings. Turn Grain recordings into answers you can trust, follow-ups you can send, and prep you can walk in with — cited back to the source meeting, every time.
 
-**Status: internal dogfood.** Not published or submitted. Feedback via PRs to this repo.
-
 ## What you can say
 
 No commands to learn — just talk about your work:
