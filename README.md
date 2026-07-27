@@ -32,7 +32,7 @@ A [Grain](https://grain.com) account. Nothing else — the Grain MCP connector i
 **Claude Code:**
 
 ```
-/plugin marketplace add <this-repo-github-url>
+/plugin marketplace add grain-team/grain-meeting-memory-plugin
 /plugin install meeting-memory-by-grain@grain
 ```
 
