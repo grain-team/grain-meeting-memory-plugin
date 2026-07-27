@@ -15,13 +15,12 @@ No commands to learn — just talk about your work:
 - *"Prep me for my 2pm with Jordan."*
 - *"What keeps coming up in our sales calls?"*
 
-Claude will also quietly check Grain when you're drafting something about a customer or account it knows — and only speak up if it finds something that changes what you're doing.
-
 ## What makes it different
 
 - **Evidence, always.** Answers cite the meeting, date, speaker, and link. "I couldn't find that in the record" is an answer you'll actually get.
 - **Work product, not summaries.** Follow-ups, updates, recaps, and briefs shaped for the person receiving them — clean enough to send without editing, with no AI residue.
 - **Cross-meeting memory.** State, commitments, and patterns folded across all your conversations — the thing no single meeting summary can do.
+- **Speaks up when it matters.** Quietly checks Grain when you're drafting something about a customer or account it knows — and only interrupts if it finds something that changes what you're doing.
 
 ## Requirements
 
