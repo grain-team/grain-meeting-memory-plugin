@@ -25,7 +25,7 @@ Claude will also quietly check Grain when you're drafting something about a cust
 
 ## Requirements
 
-A [Grain](https://grain.com) account. Nothing else — the Grain MCP connector is bundled (`.mcp.json`, pointed at `https://api.grain.com/_/mcp`) and you'll authenticate on first use. Slack, Linear, calendar, and CRM connectors are never required.
+A [Grain](https://grain.com) account (the free plan is enough). Nothing else — the Grain MCP connector is bundled (`.mcp.json`, pointed at `https://api.grain.com/_/mcp`) and you'll authenticate on first use. Slack, Linear, calendar, and CRM connectors are never required.
 
 ## Install
 
