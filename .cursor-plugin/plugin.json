@@ -1,0 +1,30 @@
+{
+  "name": "meeting-memory-by-grain",
+  "displayName": "Meeting Memory by Grain",
+  "version": "0.2.0",
+  "description": "Turn Grain meeting recordings into cited answers, sendable follow-ups, meeting prep, and a ledger of open commitments. Searches your Grain notes and transcripts, recovers what was said and decided, and drafts evidence-backed emails, updates, and briefs. Sign in with your Grain account on first use.",
+  "author": {
+    "name": "Grain"
+  },
+  "publisher": "Grain",
+  "homepage": "https://grain.com",
+  "repository": "https://github.com/grain-team/grain-meeting-memory-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "grain",
+    "grain meetings",
+    "grain transcripts",
+    "grain meeting notes",
+    "grain mcp",
+    "meeting memory"
+  ],
+  "category": "integrations",
+  "tags": [
+    "grain",
+    "meetings",
+    "transcripts",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}
