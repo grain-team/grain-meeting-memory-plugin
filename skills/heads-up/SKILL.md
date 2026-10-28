@@ -10,7 +10,7 @@ The user is doing other work that names a person, company, or account. Grain may
 
 This skill is an experiment in Grain as ambient organizational memory. Its failure mode is noise — err hard toward silence.
 
-Read if surfacing anything: `${CLAUDE_PLUGIN_ROOT}/references/evidence.md`.
+Read if surfacing anything: `references/evidence.md`, in this plugin's root directory (two levels above this `SKILL.md`).
 
 ## Rules
 

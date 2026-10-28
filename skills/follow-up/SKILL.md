@@ -8,10 +8,10 @@ argument-hint: "<what to draft, from which meeting(s), for whom>"
 
 Turn meetings into something **sendable**. This is the plugin's anchor skill — the output goes to real people, so the bar is highest here.
 
-Read first:
-- `${CLAUDE_PLUGIN_ROOT}/references/artifacts.md` — audience inference, draft-first, per-type best practices, the residue ban, delivery
-- `${CLAUDE_PLUGIN_ROOT}/references/retrieval.md` — if the source meetings aren't already identified
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence.md` — citing claims inside artifacts
+Read first, from this plugin's root directory (two levels above this `SKILL.md`):
+- `references/artifacts.md` — audience inference, draft-first, per-type best practices, the residue ban, delivery
+- `references/retrieval.md` — if the source meetings aren't already identified
+- `references/evidence.md` — citing claims inside artifacts
 
 ## Workflow
 

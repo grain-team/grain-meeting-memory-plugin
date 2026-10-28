@@ -8,9 +8,9 @@ argument-hint: "<meeting, person, account, or project>"
 
 Orient the user before a conversation: where things stand with these people, what's owed in both directions, what to raise, what to avoid stepping on. **Oriented, not buried** — quick prep fits on one screen.
 
-Read first:
-- `${CLAUDE_PLUGIN_ROOT}/references/retrieval.md` — entity resolution, account-first scoping
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence.md` — fact vs. read
+Read first, from this plugin's root directory (two levels above this `SKILL.md`):
+- `references/retrieval.md` — entity resolution, account-first scoping
+- `references/evidence.md` — fact vs. read
 
 ## Workflow
 

@@ -8,9 +8,9 @@ argument-hint: "<person, account, project, or time window>"
 
 A commitment **ledger** across meetings. Grain already lists per-meeting action items — this skill's value is what the app doesn't do: aggregate across meetings, dedupe, separate mine-from-theirs, and flag what's probably stale.
 
-Read first:
-- `${CLAUDE_PLUGIN_ROOT}/references/retrieval.md` — scoping
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence.md` — confidence, staleness, no invented tasks
+Read first, from this plugin's root directory (two levels above this `SKILL.md`):
+- `references/retrieval.md` — scoping
+- `references/evidence.md` — confidence, staleness, no invented tasks
 
 ## Workflow
 

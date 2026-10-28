@@ -8,9 +8,9 @@ argument-hint: "<account, project, topic, or time window>"
 
 **Fold** the conversations about X over time into: current state, what changed, what's open. Not a meeting-by-meeting recap — the user wants to be current, not comprehensive.
 
-Read first:
-- `${CLAUDE_PLUGIN_ROOT}/references/retrieval.md` — scoping defaults, cheap-layers-first, latency discipline
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence.md` — supersession, conflicts, coverage honesty
+Read first, from this plugin's root directory (two levels above this `SKILL.md`):
+- `references/retrieval.md` — scoping defaults, cheap-layers-first, latency discipline
+- `references/evidence.md` — supersession, conflicts, coverage honesty
 
 ## Workflow
 

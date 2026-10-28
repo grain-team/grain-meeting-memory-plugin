@@ -8,9 +8,9 @@ argument-hint: "<question, claim to verify, or theme>"
 
 Answer from the record, with evidence the user can click. This skill gets asked in high-stakes moments ("the customer says we promised X — did we?"); one invented answer ends the plugin's credibility.
 
-Read first:
-- `${CLAUDE_PLUGIN_ROOT}/references/retrieval.md` — entity resolution, synonym and counter-evidence search, cheap-layers-first
-- `${CLAUDE_PLUGIN_ROOT}/references/evidence.md` — citation rules, verification verdicts, pattern denominators, "not found"
+Read first, from this plugin's root directory (two levels above this `SKILL.md`):
+- `references/retrieval.md` — entity resolution, synonym and counter-evidence search, cheap-layers-first
+- `references/evidence.md` — citation rules, verification verdicts, pattern denominators, "not found"
 
 ## Modes
 
